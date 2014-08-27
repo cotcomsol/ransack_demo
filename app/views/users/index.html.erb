@@ -22,10 +22,20 @@
       <li>
         <%= f.label :posts_title_cont %>
         <%= f.text_field :posts_title_cont %>
-        <%= f.text_field :posts_created_since %>
       </li>
     </ul>
   </fieldset>
+
+  <fieldset>
+    <legend>User's Comments</legend>
+    <ul>
+      <li>
+        <%= f.label :comments_created_since %>
+        <%= f.text_field :comments_created_since %>
+      </li>
+    </ul>
+  </fieldset>
+
 
   <%= label_tag :distinct, 'Return distinct records?' %>
   <%= check_box_tag :distinct, '1', params[:distinct].to_i == 1 %>
